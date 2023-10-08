@@ -14,8 +14,8 @@ function App() {
       <NavBar/>
       <Titulo tituloApp="Tienda de Ropa" subTituloApp="Encontra lo que queres."/>
       <Titulo tituloApp="Sección de Remeras" subTituloApp="Selecciona la remera que queres."/>
-      <TituloForm/>
       <Card/>
+      <TituloForm/>
       <Formulario/>
     </>
   )
