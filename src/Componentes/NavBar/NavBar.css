@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    margin-left: 20px;
+}
