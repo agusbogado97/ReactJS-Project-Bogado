@@ -2,7 +2,7 @@ import ItemCount from "../ItemCount/ItemCount";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import "./Card.css";
 
-const Card = () => {
+const ItemListContainer = () => {
     return(
         <div className="card-container">
             <div className="card">
@@ -23,11 +23,11 @@ const Card = () => {
                 <h1>Remera Oversize XL</h1>
                 <img src="https://www.indy.com.ar/cdn/shop/files/2ad3688b-9ad9-4f1a-966b-ac8a480072a1copia.jpg?v=1696107090&width=713" alt="Remera Blanca Oversize" width="300px" height="400px" />
                 <p>Excelente remera Oversize XL - Unisex - White</p>
-                <button>detalle</button>
+                <button onClick={ItemDetail}>detalle</button>
                 <ItemCount initial={0} stock={10} onAdd={(quantity) => console.log("cantidad agregada", quantity)}/>
             </div>
         </div>
     )
 }
 
-export default Card;
+export default ItemListContainer;
