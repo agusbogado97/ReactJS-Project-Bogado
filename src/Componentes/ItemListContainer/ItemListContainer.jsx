@@ -1,6 +1,6 @@
 import ItemCount from "../ItemCount/ItemCount";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import "./Card.css";
+import "./ItemListContainer.css";
 
 const ItemListContainer = () => {
     return(
