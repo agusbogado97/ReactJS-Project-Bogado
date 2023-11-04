@@ -1,27 +1,32 @@
-/* import { useState } from 'react';  */
-import './App.css'
-
-/* import { BrowserRouter, Routes, Route } from 'react-router-dom'; */
-
-import NavBar from './Componentes/NavBar/NavBar';
-import Titulo  from './Componentes/Titulo/Titulo';
-import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
-
-
-
-
+import { useState } from 'react';
+import { Header } from './components/Header';
+import { ProductList } from './components/ProductList';
 
 function App() {
-  return (
-    <div className='App'>
+	const [allProducts, setAllProducts] = useState([]);
+	const [total, setTotal] = useState(0);
+	const [countProducts, setCountProducts] = useState(0);
 
-        <NavBar/>
-        <Titulo tituloApp="Tienda de Ropa" subTituloApp="Encontra lo que queres."/>
-        <ItemListContainer/>
-
-    </div>
-  )
+	return (
+		<>
+			<Header
+				allProducts={allProducts}
+				setAllProducts={setAllProducts}
+				total={total}
+				setTotal={setTotal}
+				countProducts={countProducts}
+				setCountProducts={setCountProducts}
+			/>
+			<ProductList
+				allProducts={allProducts}
+				setAllProducts={setAllProducts}
+				total={total}
+				setTotal={setTotal}
+				countProducts={countProducts}
+				setCountProducts={setCountProducts}
+			/>
+		</>
+	);
 }
-
 
 export default App;
