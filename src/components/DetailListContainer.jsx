@@ -1,6 +1,6 @@
 import { data } from '../data';
 
-export const ProductList = ({
+export const DetailListContainer = ({
 	allProducts,
 	setAllProducts,
 	countProducts,
@@ -35,7 +35,7 @@ export const ProductList = ({
 					<div className='info-product'>
 						<h2>{product.nameProduct}</h2>
 						<p className='price'>${product.price}</p>
-						<button><a href='/detalle'>Detalles del Producto</a></button>
+						<p className='price'>{product.description}</p>
 						<button onClick={() => onAddProduct(product)}>
 							Añadir al carrito
 						</button>

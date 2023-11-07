@@ -4,6 +4,7 @@ import { ProductList } from './components/ProductList';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Formulario from './components/Formulario';
+import { DetailListContainer } from './components/DetailListContainer';
 
 function App() {
 	const [allProducts, setAllProducts] = useState([]);
@@ -24,6 +25,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<ProductList allProducts={allProducts} setAllProducts={setAllProducts} total={total} setTotal={setTotal} countProducts={countProducts} setCountProducts={setCountProducts}/>}/>
 					<Route path='/contacto' element={<Formulario/>}/>
+					<Route path='/detalle' element={<DetailListContainer allProducts={allProducts} setAllProducts={setAllProducts} total={total} setTotal={setTotal} countProducts={countProducts} setCountProducts={setCountProducts}/>}/>
 				</Routes>
 
 			</BrowserRouter>
